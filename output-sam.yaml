@@ -7,8 +7,9 @@ Resources:
     Properties:
       Handler: aws.handler
       Runtime: nodejs8.10
+      FunctionName: nodejs-sample
       CodeUri: s3://spring-boot-amit1/fc5b2daea06188a81a7979da106bae77
-      MemorySize: 128
+      MemorySize: 1024
       Policies: AWSLambdaBasicExecutionRole
       Timeout: 60
       Events:

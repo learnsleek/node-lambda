@@ -8,8 +8,9 @@ Resources:
     Properties:
       Handler: aws.handler
       Runtime: nodejs8.10
+      FunctionName: nodejs-sample
       CodeUri: src/
-      MemorySize: 128
+      MemorySize: 1024
       Policies: AWSLambdaBasicExecutionRole
       Timeout: 60
       Events:
